@@ -335,7 +335,7 @@ int flan_object_open(const char *name, struct flan_handle *flanh, uint64_t *oh, 
 
   flan_otable[ff_oh].o_flags = flags;
 
-  memset(flan_otable[ff_oh].append_buf, 0, bs);
+  // memset(flan_otable[ff_oh].append_buf, 0, bs);
 
   // Read the data into the append buffer
   if (flan_otable[ff_oh].append_off < flan_obj_sz && flags & FLAN_OPEN_FLAG_WRITE)
